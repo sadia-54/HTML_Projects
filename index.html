@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel reservation form</title>
+</head>
+<body>
+    <h1> Travel reservation form </h1>
+    <b>  * denotes mandatory </b>
+    <form action = "/action.php">
+        <h5> Full name*: </h5>
+        <input type = "text" placeholder="FirstName LastName">
+        <h5> Email address*: </h5>
+        <input type="text" placeholder="EMAIL_ADDRESS">
+        <h5> Select tour package*: </h5>
+        <select name = "city">
+            <option value = "Goa"> Goa</option>
+            <option value="Kashmir"> Kashmir</option>
+            <option value="Darjeeling"> Darjeeling</option>
+            <option value="Pune" > Pune </option>
+        </select>
+        <h5> Arrival date*: </h5>
+        <inpute type = "text" placeholder="m/d/y">
+       <h5> Number of persons*: </h5>
+       <input type = "text" placeholder="UNKNOWN_TYPE">
+       <h5> What would you want to avail?*:</h5>
+       <label for = "avail">
+        <input type="checkbox" value="Boarding"> Boarding 
+       </label>
+       <br>
+       <label for = "Fooding">
+        <input type="checkbox" value="Fooding"> Fooding 
+       </label>
+       <br>
+       <label for = "Sight seeing">
+        <input type="checkbox" value="Sight seeing"> Sight seeing 
+       </label>
+       <h5> Discount Coupon code:</h5>
+       <input type="text" placeholder="UNKNOWN_TYPE">
+       <h5> Terms and conditions*</h5>
+        <input type="radio" value="I agree" name = "agreement"> I agree
+        <input type="radio" value="I disagree" name = "agreement"> I disagree
+       <br> <br>
+      <input type="submit" value="Complete reservation" >
+
+    </form>
+</body>
+</html>
